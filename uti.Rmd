@@ -1,0 +1,42 @@
+---
+title: "UTI"
+author: "Md. Shahadat Bin Shahid"
+date: '2022-06-08'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE, comment = NA)
+```
+
+# Load Packages
+```{r}
+library(tidyverse) 
+library(gt)
+library(ggpubr)
+library(ggsci)
+library(gridExtra)
+```
+
+
+
+
+# Load Data
+```{r}
+data <- read.csv("data/ecoli.csv")
+
+data %>% 
+  head() %>% 
+  gt()
+```
+```{r}
+data %>% 
+  pivot_longer(c(Amoxycillin,	Amphicilin,	Azithromycin,	Amoxyclav,	Amikacin,	Cefepime,	Cefotaxime,	Ceftrioaxone_Rocephin,	Chloramphenicol,	Cloxacillin,	Colistin,	Carbinicillin,	Cefixime,	Ceftazidime,	Cefuroxime,	Ciprofloxacin,	Cotrimoxazole,	Doxycycline,	Doripenem,	Erythomycin,	Fusidic Acid,	Gentamicin,	Imipenem,	Levofloxacin,	Meropenem,	Nalidexic Acid,	Norfloxacin,	Nitrofurantoin,	Penicillin_V,	Piperacillin_Tazobactam,	Tigecycline,	Tobramycin,	Ticarcillin,	Vancomycin,	Linezolid))
+```
+
+
+
+
+
+
+
